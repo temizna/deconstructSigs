@@ -3,7 +3,7 @@
 #' Takes sample information in the form of the fraction of mutations
 #' in each of 96 trinucleotide contexts and identifies the weighted combination 
 #' of published signatures that, when summed, most closely reconstructs the 
-#' mutational profile.
+#' mutational profile for any given genome build.
 #'
 #' @section Main functions:
 #' \itemize{ 
