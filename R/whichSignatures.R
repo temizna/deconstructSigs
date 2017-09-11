@@ -50,7 +50,7 @@
 #'                        contexts.needed = FALSE)
 
 whichSignatures = function(tumor.ref = NA, 
-                           sample.id, 
+                           sample.id = NA, 
                            signatures.ref = signatures.nature2013, 
                            associated = c(), 
                            signatures.limit = NA,
