@@ -78,7 +78,7 @@ whichSignatures = function(tumor.ref = NA,
     }
   }  
   
-  if (exists(sample.id) && nrow(tumor) == 1) {
+  if (!exists(sample.id) && nrow(tumor) == 1) {
     sample.id = rownames(tumor)[1]
   }
   # Take patient id given
