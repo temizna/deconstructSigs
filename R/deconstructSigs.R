@@ -15,5 +15,6 @@
 #'   
 #' @docType package
 #' @author Rachel Rosenthal rachel.rosenthal.14@ucl.ac.uk
+#' @author Alpay Temiz temizna@umn.edu
 #' @name deconstructSigs
 NULL
