@@ -84,7 +84,7 @@ whichSignatures = function(tumor.ref = NA,
   # Take patient id given
   tumor <- as.matrix(tumor)
   if(!sample.id %in% rownames(tumor)){
-    stop(paste(sample.id, " not found in rownames of tumor.ref", sep = ''))
+    stop(paste(sample.id, " not found in rownames of tumor.ref\n", sep = ''))
   }
   tumor <- subset(tumor, rownames(tumor) == sample.id)
   if(round(rowSums(tumor), digits = 1) != 1){
