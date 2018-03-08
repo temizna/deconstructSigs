@@ -126,7 +126,7 @@ whichSignatures = function(tumor.ref = NA,
   }
   
   # Remove signatures from possibilities if they have a "strong" peak not seen in the tumor sample
-  zero.contexts   <- colnames(tumor)[tumor < 0.005]
+  zero.contexts   <- colnames(tumor)[tumor < 0.01]
   zero.contexts<-zero.contexts[complete.cases(zero.contexts)]
   corr.sigs       <- which(signatures[,zero.contexts] >= 0.2, arr.ind = T)
   signatures      <- signatures[which(!rownames(signatures) %in% rownames(corr.sigs)),,drop = FALSE]
