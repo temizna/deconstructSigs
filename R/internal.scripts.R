@@ -13,7 +13,7 @@
 #' @export
 getError = function(tumor, signatures, w){
   w_norm = w/sum(w)
-  product = w_norm %*% signatures
+  product = w_norm %*% as.matrix(signatures)
   error = tumor - product
   penalized.error = error
   neg = which(penalized.error < 0)
